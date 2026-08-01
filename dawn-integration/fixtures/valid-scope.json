@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "authorised": true,
+  "authority_evidence_ref": "evidence/authorisation-demo-001.md",
+  "target": {
+    "url": "https://security-canary.example.invalid",
+    "exact_host_only": true,
+    "production": false
+  },
+  "methods": [
+    "passive_headers",
+    "tls_configuration",
+    "dependency_inventory"
+  ],
+  "prohibited_methods": [
+    "destructive_testing",
+    "credential_attack",
+    "denial_of_service"
+  ],
+  "network_execution": false,
+  "timeout_minutes": 10,
+  "evidence_redaction": true
+}
