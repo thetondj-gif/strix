@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "capability_id": "dawn-application-assurance",
+  "source_repository": "thetondj-gif/strix",
+  "workstream_branch": "dawn/capability-foundry-wave-1",
+  "status": "RESEARCHED",
+  "purpose": "Provide evidence-backed security testing for explicitly authorised applications and isolated test targets.",
+  "integration_mode": "isolated-security-worker",
+  "read_write_classification": "authorised-target-write-capable",
+  "required_credentials": [],
+  "network_access": "explicit-target-allowlist-only",
+  "persistent_ports": [],
+  "risk_rating": "high",
+  "allowed_operations": [
+    "authorised_attack_surface_review",
+    "bounded_security_test",
+    "finding_validation",
+    "remediation_guidance",
+    "authorised_retest"
+  ],
+  "prohibited_operations": [
+    "unsanctioned_target_testing",
+    "blanket_network_access",
+    "credential_capture",
+    "destructive_exploitation",
+    "customer_production_testing_without_written_scope",
+    "production_runtime_activation"
+  ],
+  "dawn_v2_rebuild_separated": true,
+  "connected_to_dawn": false,
+  "production_verified": false
+}

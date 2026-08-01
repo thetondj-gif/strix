@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "authorised": false,
+  "authority_evidence_ref": "",
+  "target": {
+    "url": "http://example.com",
+    "exact_host_only": false,
+    "production": true
+  },
+  "methods": [
+    "destructive_testing",
+    "credential_attack"
+  ],
+  "prohibited_methods": [],
+  "network_execution": true,
+  "timeout_minutes": 120,
+  "evidence_redaction": false
+}
